@@ -31,10 +31,10 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
+          {loader: MiniCssExtractPlugin.loader, options: {}},
+          {loader: 'css-loader', options: {url: true, import: true}},
+          {loader: 'postcss-loader'},
+          {loader: 'sass-loader'},
         ],
       },
       {
@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         test: /\.svg$/i,
-        type: 'asset/resource',
+        type: 'asset/inline',
       },
     ],
   },
