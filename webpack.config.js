@@ -10,6 +10,7 @@ ghpages.publish('dist', function (err) {});
 module.exports = {
   entry: {
     index: path.resolve(__dirname, 'src', 'index.js'),
+    article: path.resolve(__dirname, 'src', 'article.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -60,7 +61,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'article.html'),
       filename: 'article.html',
-      chunks: ['index'],
+      chunks: ['article'],
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({

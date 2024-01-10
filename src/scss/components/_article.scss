@@ -1,0 +1,64 @@
+.article {
+  padding: 22px 40px 80px;
+  text-align: left;
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  &__share {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: bottom;
+    object-position: bottom;
+    margin-top: 6px;
+  }
+
+  &__text {
+    max-width: 690px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+
+  &__help {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 16px;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__link_green {
+    width: 224px;
+    height: 48px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #36BA5F;
+    color: #FFF;
+  }
+}
