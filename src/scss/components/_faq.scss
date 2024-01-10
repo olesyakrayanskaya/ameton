@@ -26,18 +26,10 @@
 
   &__inner {
     position: absolute;
-    left: 40px;
+    left: 0;
     top: 80px;
     width: 100%;
     overflow: hidden;
-
-    @media (max-width: 670px) {
-      left: 20px;
-    }
-
-    @media (max-width: 480px) {
-      left: 0px;
-    }
   }
 
   &__slider {
