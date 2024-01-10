@@ -9,11 +9,21 @@
   width: 100%;
   min-height: 306px;
 
+  @media (max-width: 900px) {
+    padding: 20px 10px 14px;
+    min-height: 206px;
+  }
+
   &::before {
     content: url('assets/img/telegrams.svg');
     position: absolute;
     left: 0;
     top: 37px;
+
+    @media (max-width: 1150px) {
+      display: none;
+    }
+    
   }
 
   &::after {
@@ -28,6 +38,10 @@
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (max-width: 1150px) {
+      display: none;
+    }
   }
 
   &__title {
@@ -36,6 +50,15 @@
     line-height: 120%;
     letter-spacing: 1px;
     margin: 4px 0;
+
+    @media (max-width: 900px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 350px) {
+      font-size: 30px;
+    }
+
   }
 
   &__text {
@@ -44,5 +67,10 @@
     line-height: 140%;
     max-width: 535px;
     margin: 0 auto 40px;
+
+    @media (max-width: 900px) {
+      font-size: 15px;
+      margin: 0 auto 20px;
+    }
   }
 }
